@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrap-card">
+        <!-- Todo Input -->
+        <div class="wrap-content">
+          <h1 class="title-app">Todo List</h1>
+          <form action="" id="form-input">
+            <label for="todo">Todo</label>
+            <input type="text" name="todo" id="todoInput" placeholder="Disini" autocomplete="off" />
+            <button class="btn" type="submit" onclick="sendTodo()">Kirim</button>
+            <button class="btn" type="reset" onclick="clearStorage()">Bersihkan</button>
+            <span class="alert"></span>
+          </form>
+        </div>
+
+        <!-- Todo -->
+        <div class="todo-answer">
+          <div id="todo-content"></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
